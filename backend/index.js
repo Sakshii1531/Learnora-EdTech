@@ -1,6 +1,7 @@
+const dotenv = require("dotenv");
+dotenv.config({ path: '../.env' });
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
@@ -14,7 +15,7 @@ const courseRoutes = require("./routes/Course");
 const paymentsRoutes = require("./routes/Payments");
 const profileRoutes = require("./routes/Profile");
 
-dotenv.config();
+// dotenv.config();
 const PORT = process.env.PORT || 4000;
 
 

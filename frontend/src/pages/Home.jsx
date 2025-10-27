@@ -11,7 +11,7 @@ const Home = () => {
 
                   <div>
                     <div>
-                        <p>Becaome an Instructor</p>
+                        <p>Become an Instructor</p>
                         <FaArrowRight />
                     </div>
                   </div>
