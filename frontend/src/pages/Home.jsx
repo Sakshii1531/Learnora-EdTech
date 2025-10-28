@@ -11,7 +11,7 @@ const Home = () => {
 
                   <div>
                     <div>
-                        <p>Become an Instructor</p>
+                        <p className='relative mx-auto flex flex-col w-11/12 items-center text-white justify-between'>Become an Instructor</p>
                         <FaArrowRight />
                     </div>
                   </div>
