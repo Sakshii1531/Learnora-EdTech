@@ -2,6 +2,7 @@
 // Icons Import
 import { FaArrowRight } from "react-icons/fa"
 import { Link } from "react-router-dom"
+import '../App.css';
 
 // Image and Video Import
 import Banner from "../assets/Images/banner.mp4"
@@ -10,11 +11,11 @@ import Banner from "../assets/Images/banner.mp4"
 // import ReviewSlider from "../components/common/ReviewSlider"
 import CTAButton from "/src/components/core/HomePage/Button"
 import CodeBlocks from "/src/components/core/HomePage/CodeBlocks"
-// import ExploreMore from "../components/core/HomePage/ExploreMore"
+import ExploreMore from "/src/components/core/HomePage/ExploreMore"
 import HighlightText from "/src/components/core/HomePage/HighlightText"
-// import InstructorSection from "../components/core/HomePage/InstructorSection"
-// import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection"
-// import TimelineSection from "../components/core/HomePage/Timeline"
+import InstructorSection from "/src/components/core/HomePage/InstructorSection"
+import LearningLanguageSection from "/src/components/core/HomePage/LearningLanguageSection"
+import TimelineSection from "/src/components/core/HomePage/Timeline"
 // import { useEffect, useState } from "react"
 // import ConfirmationModal from "../components/common/ConfirmationModal"
 function Home() {
@@ -34,7 +35,7 @@ function Home() {
     
       <div>
         {/* Section 1 */}
-      <div className="relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white">
+      <div className="relative mx-auto flex w-8/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white">
         {/* Become a Instructor Button */}
         <Link to={"/signup"}>
           <div className="group mx-auto mt-16 w-fit rounded-full bg-[#01212A] p-1 font-bold text-[#537988] 
@@ -136,21 +137,21 @@ function Home() {
               linkto: "/signup",
               active: false,
             }}
-            codeColor={"text-white"}
+            codeColor={"text-[#FFE83D]"}
             codeblock={`import React from "react";\nimport CTAButton from "./Button";\nimport TypeAnimation from "react-type";\nimport { FaArrowRight } from "react-icons/fa";\n\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
             backgroundGradient={<div className="codeblock2 absolute"></div>}
-          />
+           />
         </div>
 
         {/* Explore Section */}
-        {/* <ExploreMore />
-      </div> */}
+        <ExploreMore />
+      </div>
 
       {/* Section 2 */}
-      {/* <div className="bg-pure-greys-5 text-richblack-700">
-        <div className="homepage_bg h-[320px]">
+      <div className="bg-[#F9F9F9] text-[#2C333F]">
+        <div className="homepage_bg h-80">
           {/* Explore Full Catagory Section */}
-          {/* <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
+           <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
             <div className="lg:h-[150px]"></div>
             <div className="flex flex-row gap-7 text-white lg:mt-8">
               <CTAButton active={true} linkto={"/signup"}>
@@ -166,10 +167,10 @@ function Home() {
           </div>
         </div>
 
-        <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 "> */}
+        <div className="mx-auto flex w-9/12 max-w-maxContent flex-col items-center justify-between gap-8 "> 
           {/* Job that is in Demand - Section 1 */}
-          {/* <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
-            <div className="text-4xl font-semibold lg:w-[45%] ">
+           <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
+            <div className="text-4xl font-semibold lg:w-[50%] ">
               Get the skills you need for a{" "}
               <HighlightText text={"job that is in demand."} />
             </div>
@@ -183,41 +184,40 @@ function Home() {
                 <div className="">Learn More</div>
               </CTAButton>
             </div>
-          </div> */} 
+          </div> 
 
           {/* Timeline Section - Section 2 */}
-          {/* <TimelineSection /> */}
+           <TimelineSection /> 
 
           {/* Learning Language Section - Section 3 */}
-          {/* <LearningLanguageSection />
+           <LearningLanguageSection />
         </div>
-      </div> */}
+      </div>
 
       {/* Section 3 */}
-      {/* <div className="relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white"> */}
+      <div className="relative mx-auto my-20 flex w-10/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white"> 
         {/* Become a instructor section */}
-        {/* <InstructorSection /> */}
+        <InstructorSection />
 
         {/* Reviws from Other Learner */}
-        {/* <h1 className="text-center text-4xl font-semibold mt-8">
+         <h1 className="text-center text-4xl font-semibold mt-8">
           Reviews from other learners
         </h1>
-        <ReviewSlider />
-      </div> */}
+        {/* <ReviewSlider /> */}
+      </div>
 
       {/* Footer */}
       {/* <Footer /> */}
 
-        {/* {
+
+      {/* {
         confirmationModal &&
         <ConfirmationModal
         modalData={confirmationModal} 
        />
-      }  */}
-   
+      }   */}
       </div>
 
-      </div>
   );
 }
 
