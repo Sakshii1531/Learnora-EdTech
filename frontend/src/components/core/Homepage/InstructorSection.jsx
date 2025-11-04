@@ -18,12 +18,12 @@ const InstructorSection = () => {
           <div className="lg:w-[50%] flex gap-10 flex-col">
             <h1 className="lg:w-[50%] text-4xl font-semibold ">
               Become an
-              <HighlightText text={"instructor"} />
+              <HighlightText text={"Instructor"} />
             </h1>
 
             <p className="font-medium text-[16px] text-justify w-[80%] text-[#838894]">
               Instructors from around the world teach millions of students on
-              StudyNotion. We provide the tools and skills to teach what you
+              Learnora. We provide the tools and skills to teach what you
               love.
             </p>
 
