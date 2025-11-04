@@ -7,8 +7,8 @@ import '../App.css';
 // Image and Video Import
 import Banner from "../assets/Images/banner.mp4"
 // Component Imports
-// import Footer from "../components/common/Footer"
-// import ReviewSlider from "../components/common/ReviewSlider"
+import Footer from "/src/components/common/Footer"
+import ReviewSlider from "/src/components/common/ReviewSlider"
 import CTAButton from "/src/components/core/HomePage/Button"
 import CodeBlocks from "/src/components/core/HomePage/CodeBlocks"
 import ExploreMore from "/src/components/core/HomePage/ExploreMore"
@@ -203,11 +203,11 @@ function Home() {
          <h1 className="text-center text-4xl font-semibold mt-8">
           Reviews from other learners
         </h1>
-        {/* <ReviewSlider /> */}
+        <ReviewSlider />
       </div>
 
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
 
 
       {/* {
