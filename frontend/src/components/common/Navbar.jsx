@@ -1,31 +1,30 @@
 import { useEffect, useState } from "react"
 import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
-import { BsChevronDown } from "react-icons/bs"
+// import { BsChevronDown } from "react-icons/bs"
 import { useSelector } from "react-redux"
 import { Link, matchPath, useLocation } from "react-router-dom"
-
+import { useLocation } from "react-router-dom";
 import logo from "../../assets/Logo/Logo-Full-Light.png"
 import { NavbarLinks } from "../../data/navbar-links"
 import { apiConnector } from "../../services/apiconnector"
-import { categories } from "../../services/apis"
-import { ACCOUNT_TYPE } from "../../utils/constants"
+import { categories } from "src/services/apis"
+// import { ACCOUNT_TYPE } from "../../utils/constants"
 import ProfileDropdown from "../core/Auth/ProfileDropdown"
-import { BottomNavigation } from "@mui/material"
+// import { BottomNavigation } from "@mui/material"
 
 
 
 function Navbar() {
-  const [showDropDown,setShowDropDown]=useState(false);
+  // const [showDropDown,setShowDropDown]=useState(false);
   const { token } = useSelector((state) => state.auth)
   const { user } = useSelector((state) => state.profile)
   const { totalItems } = useSelector((state) => state.cart)
-  const location = useLocation()
 
   const [subLinks, setSubLinks] = useState([])
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    ;(async () => {
+    async () => {
       setLoading(true)
       try {
         const res = await apiConnector("GET", categories.CATEGORIES_API)
@@ -33,12 +32,12 @@ function Navbar() {
       } catch (error) {
         console.log("Could not fetch Categories.", error)
       }
-      setLoading(false)
-    })()
+      // setLoading(false)
+    }
   }, [])
 
   // console.log("sub links", subLinks)
-
+  const location = useLocation();
   const matchRoute = (route) => {
     return matchPath({ path: route }, location.pathname)
   }
