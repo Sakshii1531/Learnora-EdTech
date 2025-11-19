@@ -7,8 +7,9 @@ import Banner from "../assets/Images/banner.mp4";
 import CodeBlocks from "../components/core/Homepage/CodeBlocks";
 import "../App.css";
 // import ExploreMore from "../components/core/Homepage/ExploreMore";
-// import Timeline from "../components/core/Homepage/Timeline";
-// import LearningLanguageSection from "../components/core/Homepage/LearningLanguageSection";
+import TimelineSection from "../components/core/Homepage/Timeline";
+import LearningLanguageSection from "../components/core/Homepage/LearningLanguageSection";
+
 
 
 
@@ -146,7 +147,7 @@ const Home = () => {
                    </div>
                  </div>
 
-                 <div className="mx-auto flex w-9/12 max-w-maxContent flex-col items-center justify-between gap-8 ">
+                 <div className="mx-auto flex w-10/12 max-w-maxContent flex-col items-center justify-between gap-8 ">
                     {/* Job that is in Demand - Section 1 */}
                     <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
                       <div className="text-4xl font-semibold lg:w-[45%] ">
@@ -166,10 +167,10 @@ const Home = () => {
                     </div>
 
                     {/* Timeline Section - Section 2 */}
-                    {/* <TimelineSection /> */}
+                    <TimelineSection />
 
                     {/* Learning Language Section - Section 3 */}
-                    {/* <LearningLanguageSection /> */}
+                   <LearningLanguageSection/>
                   </div>
 
            </div>
