@@ -6,10 +6,11 @@ import CTAButton from "../components/core/Homepage/Button";
 import Banner from "../assets/Images/banner.mp4";
 import CodeBlocks from "../components/core/Homepage/CodeBlocks";
 import "../App.css";
-// import ExploreMore from "../components/core/Homepage/ExploreMore";
 import TimelineSection from "../components/core/Homepage/Timeline";
 import LearningLanguageSection from "../components/core/Homepage/LearningLanguageSection";
-
+import InstructorSection from "../components/core/Homepage/InstructorSection";
+import Footer from "../components/common/Footer";
+import ExploreMore from "../components/core/Homepage/ExploreMore";
 
 
 
@@ -124,7 +125,7 @@ const Home = () => {
                  />
                </div>
 
-               {/* <ExploreMore/> */}
+               <ExploreMore/>
            </div>
 
            {/* section 2 */}
@@ -177,9 +178,26 @@ const Home = () => {
 
 
            {/* section 3 */}
+            <div className="relative mx-auto my-20 flex w-9/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-[#000814] text-white">
+                      {/* Become a instructor section */}
+                      <InstructorSection />
 
+                      {/* Reviws from Other Learner */}
+                      {/* <h1 className="text-center text-4xl font-semibold mt-8">
+                        Reviews from other learners
+                      </h1> */}
+                      {/* <ReviewSlider /> */}
+                    </div>
 
-           {/* Footer */}
+        {/* Footer */}
+                    <Footer />
+
+                      {/* {
+                      confirmationModal &&
+                      <ConfirmationModal
+                      modalData={confirmationModal} 
+                     />
+                    } */}
         </div>   
     )
 }
